@@ -2,7 +2,7 @@
 
 import { Canvas } from '@react-three/fiber';
 import { Bloom, EffectComposer } from '@react-three/postprocessing';
-import * as THREE from 'three';
+
 import styled from 'styled-components';
 import dynamic from 'next/dynamic';
 import Title from '@/components/Title';

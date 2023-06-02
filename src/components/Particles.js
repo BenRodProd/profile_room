@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Points, BufferGeometry, BufferAttribute, PointsMaterial, Color } from 'three';
-
+<reference path="../node_modules/@types/three/index.d.ts" />
 const Particle = () => {
   const particleRef = useRef(null);
 

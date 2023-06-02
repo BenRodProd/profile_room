@@ -2,7 +2,7 @@
 
 import { forwardRef, Suspense, useImperativeHandle, useRef } from 'react'
 import { OrbitControls, PerspectiveCamera, View as ViewImpl } from '@react-three/drei'
-import { Three } from '@react-three/fiber'
+import * as Three from 'three';
 
 
 export const Common = ({ color }) => (
