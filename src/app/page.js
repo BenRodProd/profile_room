@@ -1,8 +1,8 @@
 "use client"
-import * as THREE from 'three';
+
 import { Canvas } from '@react-three/fiber';
 import { Bloom, EffectComposer } from '@react-three/postprocessing';
-import { OrbitControls } from '@react-three/drei';
+
 import styled from 'styled-components';
 import dynamic from 'next/dynamic';
 import Title from '@/components/Title';

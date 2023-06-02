@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Points, BufferGeometry, BufferAttribute, PointsMaterial, Color } from 'three';
-import { SelectiveBloom, EffectComposer, Bloom } from '@react-three/postprocessing';
+
 const Particle = () => {
   const particleRef = useRef(null);
 
