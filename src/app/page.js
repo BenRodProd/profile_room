@@ -11,6 +11,7 @@ import Contact from '@/components/Contact';
 import Tech from '@/components/TechStack';
 import Certificates from '@/components/Certificates';
 import Camera from '@/components/Camera';
+import Particle from '@/components/Particles';
 
 const Main = styled.div`
   display: flex;
@@ -36,6 +37,7 @@ export default function Home() {
           <Contact />
           <Tech />
           <Certificates />
+          <Particle />
           <Common />
         </Canvas>
       </Main>

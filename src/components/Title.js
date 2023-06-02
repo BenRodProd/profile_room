@@ -3,6 +3,8 @@ import { TextureLoader } from 'three'
 import { useMemo } from 'react'
 
 const Title = () => {
+
+
   const texture = useMemo(() => new TextureLoader().load('./title.jpg'), []) // Load texture once and memoize
   const texture2 = useMemo(() => new TextureLoader().load('./greenline.png'), []) // Load texture once and memoize
   return (
