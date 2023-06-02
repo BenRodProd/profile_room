@@ -2,7 +2,7 @@
 
 import { forwardRef, Suspense, useImperativeHandle, useRef } from 'react'
 import { OrbitControls, PerspectiveCamera, View as ViewImpl } from '@react-three/drei'
-import * as Three from 'three';
+
 
 
 export const Common = ({ color }) => (
@@ -22,12 +22,12 @@ const View = forwardRef(({ children, orbit, ...props }, ref) => {
   return (
     <>
       <div ref={localRef} {...props} />
-      <Three>
+     
         <ViewImpl track={localRef}>
           {children}
           {orbit && <OrbitControls />}
         </ViewImpl>
-      </Three>
+     
     </>
   )
 })

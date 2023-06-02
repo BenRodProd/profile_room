@@ -15,7 +15,7 @@ const Particle = () => {
       positions[index] = Math.random() * 200 - 100; // x position
       positions[index + 1] = Math.random() * 200 - 100; // y position
       positions[index + 2] = Math.random() * 200 - 100; // z position
-      sizes[i] = Math.random() * 0.005; // particle size
+      sizes[i] = Math.random() * 0.5; // particle size
 
       // Random initial velocities
       velocities[index] = Math.random() * 0.02 - 0.01; // x velocity
@@ -29,7 +29,7 @@ const Particle = () => {
 
     const color = new Color(0x03fc13);
     const material = new PointsMaterial({
-      size: 0.05,
+      size: 0.1,
       color: color,
       sizeAttenuation: true,
       transparent: true,
