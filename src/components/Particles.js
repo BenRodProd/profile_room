@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Points, BufferGeometry, BufferAttribute, PointsMaterial, Color } from 'three';
-
+import { SelectiveBloom, EffectComposer, Bloom } from '@react-three/postprocessing';
 const Particle = () => {
   const particleRef = useRef(null);
 
@@ -37,9 +37,9 @@ const Particle = () => {
       blending: 1, // THREE.AdditiveBlending
     });
     material.emissive = color;
-    material.emissiveIntensity = 55.5;
+    material.emissiveIntensity = 2;
     material.depthWrite = false;
-
+    material.toneMapped=false;
     const particles = new Points(geometry, material);
     particleRef.current.add(particles);
 
@@ -85,7 +85,13 @@ const Particle = () => {
     };
   }, []);
 
-  return <group ref={particleRef} />;
+  return (
+  <>
+
+  <group ref={particleRef} />
+
+  </>
+  )
 };
 
 export default Particle;

@@ -8,10 +8,10 @@ const About = () => {
   return (
     <>
     <Plane args={[5, 5]} scale={7} rotation-y={-Math.PI / 2} position={[60, -0, -3]}>
-      <meshBasicMaterial attach='material' map={texture} />
+      <meshBasicMaterial attach='material'  map={texture} emissiveIntensity={10} toneMapped={false} />
     </Plane>
     <Plane args={[5, 5]} scale={24} rotation-y={-Math.PI / 2} position={[59.5, -0, -3]}>
-      <meshBasicMaterial attach='material' map={texture2} transparent />
+      <meshBasicMaterial attach='material' map={texture2} transparent emissiveIntensity={10} toneMapped={false}/>
     </Plane>
     </>
   )

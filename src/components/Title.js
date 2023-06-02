@@ -10,10 +10,10 @@ const Title = () => {
   return (
     <>
     <Plane args={[5, 5]} scale={7} rotation-x={(0.0, -5.3, -0)} position={[0, 0, -60]}>
-      <meshBasicMaterial attach='material' map={texture} />
+      <meshBasicMaterial attach='material' map={texture} emissiveIntensity={2} toneMapped={false}/>
     </Plane>
     <Plane args={[5, 5]} scale={23} rotation-x={(0.0, -5.3, -0)} position={[0, 0, -60]}>
-    <meshBasicMaterial attach='material' map={texture2} transparent/>
+    <meshBasicMaterial attach='material' emissiveIntensity={10} toneMapped={false} map={texture2} transparent/>
   </Plane>
   </>
   )

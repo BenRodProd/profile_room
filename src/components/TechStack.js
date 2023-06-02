@@ -8,10 +8,10 @@ const Tech = () => {
   return (
     <>
     <Plane args={[5, 5]} scale={7} rotation-x={Math.PI} rotation-z={Math.PI} position={[0, 0, 54]}>
-      <meshBasicMaterial attach='material' map={texture} />
+      <meshBasicMaterial attach='material' map={texture} emissiveIntensity={10} toneMapped={false} />
     </Plane>
     <Plane args={[5, 5]} scale={23} rotation-x={Math.PI} rotation-z={Math.PI} position={[0, 0, 54]}>
-      <meshBasicMaterial attach='material' map={texture2} transparent />
+      <meshBasicMaterial attach='material' map={texture2} transparent emissiveIntensity={10} toneMapped={false}/>
     </Plane>
     </>
   )

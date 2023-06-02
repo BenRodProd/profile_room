@@ -1,6 +1,7 @@
 "use client"
 import * as THREE from 'three';
 import { Canvas } from '@react-three/fiber';
+import { Bloom, EffectComposer } from '@react-three/postprocessing';
 import { OrbitControls } from '@react-three/drei';
 import styled from 'styled-components';
 import dynamic from 'next/dynamic';
@@ -30,15 +31,18 @@ export default function Home() {
       <Main>
         <Canvas>
           <Camera />
-         
+          <EffectComposer>
+         <Bloom minimapBlur luminanceThreshold={0.5} luminanceSmoothing={0.9} width={300} height={300} intensity={0.5}/>
           <Title />
           <About />
           <Projects />
           <Contact />
           <Tech />
           <Certificates />
+          
           <Particle />
           <Common />
+          </EffectComposer>
         </Canvas>
       </Main>
     </>

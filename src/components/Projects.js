@@ -11,10 +11,10 @@ const Projects = () => {
   return (
     <>
     <Plane args={[5, 5]} scale={7} rotation-y={Math.PI / 2} position={[-47, 0, -3]}>
-      <meshBasicMaterial attach='material' map={texture} />
+      <meshBasicMaterial attach='material' map={texture} emissiveIntensity={10} toneMapped={false}/>
     </Plane>
      <Plane args={[5, 5]} scale={23}  rotation-y={Math.PI / 2} position={[-57, 0, -3]}>
-     <meshBasicMaterial attach='material' map={texture2} transparent/>
+     <meshBasicMaterial attach='material' map={texture2} transparent emissiveIntensity={10} toneMapped={false}/>
    </Plane>
    <Plane args={[10, 3, 1, 1]} scale={0.4} rotation-y={Math.PI / 2} position={[-40, 0.3, -2.1]} onClick={() => handlePlaneClick('https://benrodprod.github.io/TrashPlayer/')}>
         <meshBasicMaterial attach='material'  opacity={0} transparent />

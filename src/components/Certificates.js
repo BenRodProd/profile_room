@@ -8,7 +8,7 @@ const Certificates = () => {
   return (
     <>
     <Plane args={[5, 5]} scale={7} rotation-x={Math.PI/2} position={[0, 57.5, -3]}>
-      <meshBasicMaterial attach='material' map={texture} />
+      <meshBasicMaterial attach='material' map={texture} toneMapped={true} luminanceThreshold={0} />
     </Plane>
 
      </>
