@@ -3,7 +3,7 @@
 import { forwardRef, Suspense, useImperativeHandle, useRef } from 'react'
 import { OrbitControls, PerspectiveCamera, View as ViewImpl } from '@react-three/drei'
 import { Three } from '@react-three/fiber'
-import dynamic from 'next/dynamic'
+
 
 export const Common = ({ color }) => (
   <Suspense fallback={null}>
